@@ -19,6 +19,12 @@ protoc ./Person.proto --python_out=./ --pyi_out=.
 
 Note the flag ```--pyi_out=.``` This flag tells the ```protoc``` compiler to generate the pyi file, allowing you to easily use the helper classes to instantiate and manipulate the Person class and its attributes.
 
+If you have not installed the grpc toolset, you will get an error running the command above. Make sure to install it using pip with the following command:
+
+```
+pip install grpcio_tools
+```
+
 Upon running this script you should see the following:
 
 ```
